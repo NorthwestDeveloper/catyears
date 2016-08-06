@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="catyears" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten" translatesAutoresizingMaskIntoConstraints="NO" id="rsO-dL-hkN"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAT YEARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-64-aAb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="4hT-MZ-Abi"/>
+                                    <constraint firstAttribute="height" constant="56" id="7p9-7w-JlJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW OLD IS MY CAT?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M31-Gb-xIE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="dSD-n4-cpQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="t5U-Sp-SmS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Type Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7BQ-6D-p1k">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Cat Years " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7B-g4-vYr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="JbZ-No-9rm"/>
+                                    <constraint firstAttribute="width" constant="203" id="lGc-ih-QKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-ob-bkk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="RYk-sQ-BQ0"/>
+                                    <constraint firstAttribute="height" constant="57" id="VLW-Gv-Bta"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP7-jg-iFv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="HlU-Yw-QyB"/>
+                                    <constraint firstAttribute="width" constant="134" id="cqw-te-czI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fv-5V-IFT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rsO-dL-hkN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6nz-IF-wH8"/>
+                            <constraint firstAttribute="trailing" secondItem="rsO-dL-hkN" secondAttribute="trailing" id="6rx-Gh-ByI"/>
+                            <constraint firstItem="7BQ-6D-p1k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Vx-si-OGP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rsO-dL-hkN" secondAttribute="bottom" id="94x-Nd-xp0"/>
+                            <constraint firstItem="cP7-jg-iFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBE-Ij-j8d"/>
+                            <constraint firstItem="U7B-g4-vYr" firstAttribute="top" secondItem="7BQ-6D-p1k" secondAttribute="bottom" constant="8" id="HHD-PB-fvl"/>
+                            <constraint firstItem="rsO-dL-hkN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LEy-eV-ox1"/>
+                            <constraint firstItem="cP7-jg-iFv" firstAttribute="top" secondItem="mB8-ob-bkk" secondAttribute="bottom" id="MTl-iW-95k"/>
+                            <constraint firstItem="M31-Gb-xIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pd2-Y5-9dC"/>
+                            <constraint firstItem="mB8-ob-bkk" firstAttribute="top" secondItem="7BQ-6D-p1k" secondAttribute="bottom" constant="41" id="Sfg-pb-UrJ"/>
+                            <constraint firstItem="eBu-64-aAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2i-5X-Ts5"/>
+                            <constraint firstItem="mB8-ob-bkk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCn-2f-mrd"/>
+                            <constraint firstItem="U7B-g4-vYr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWc-HX-GVi"/>
+                            <constraint firstItem="M31-Gb-xIE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="g5f-6T-veg"/>
+                            <constraint firstItem="7BQ-6D-p1k" firstAttribute="top" secondItem="M31-Gb-xIE" secondAttribute="bottom" constant="8" id="hVJ-Ie-IuO"/>
+                            <constraint firstItem="7BQ-6D-p1k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q4h-Ql-VJD"/>
+                            <constraint firstItem="eBu-64-aAb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="xur-NN-au2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultField" destination="mB8-ob-bkk" id="IgM-Rg-U6m"/>
+                        <outlet property="textField" destination="7BQ-6D-p1k" id="uyU-Un-brz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten" width="800" height="600"/>
+    </resources>
+</document>
